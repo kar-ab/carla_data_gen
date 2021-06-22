@@ -1,0 +1,120 @@
+# Paths follow the pattern 
+
+sensor_left: 
+  blueprint: sensor.camera.rgb
+  caption: Camera RGB
+  Setting:
+    image_size_x: 1382
+    image_size_y: 512
+    fov: 90
+    sensor_tick: 0
+  Spawning:
+    Location:
+      y: -1.0
+      z: 1.65
+    Rotation:
+      pitch: -15
+    attachment_type: Rigid
+    attach_to: hero
+  Listening:
+    colorConverter: Raw
+  data_format: images
+  
+sensor_left_gray:
+ blueprint: sensor.camera.depth
+ caption: Camera Depth (Logarithmic Gray Scale)
+ Setting:
+   image_size_x: 1382
+   image_size_y: 512
+   fov: 90
+ Spawning:
+   Location:
+     y: -1.0
+     z: 1.65
+   Rotation:
+     pitch: -15
+   attachment_type: Rigid
+   attach_to: hero
+ Listening:
+   colorConverter: LogarithmicDepth
+ data_format: images
+
+sensor_left_semseg:
+ blueprint: sensor.camera.semantic_segmentation
+ caption: Camera Semantic Segmentation (CityScapesPalette)
+ Setting:
+   image_size_x: 1382
+   image_size_y: 512
+   fov: 90
+ Spawning:
+   Location:
+     y: -1.0
+     z: 1.65
+   Rotation:
+     pitch: -15
+   attachment_type: Rigid
+   attach_to: hero
+ Listening:
+   colorConverter: CityScapesPalette
+ data_format: images
+
+sensor_right: 
+  blueprint: sensor.camera.rgb
+  caption: Camera RGB
+  Setting:
+    image_size_x: 1382
+    image_size_y: 512
+    fov: 90
+    sensor_tick: 0
+  Spawning:
+    Location:
+      y: 1.0
+      z: 1.65
+    Rotation:
+      pitch: -15
+    attachment_type: Rigid
+    attach_to: hero
+  Listening:
+    colorConverter: Raw
+  data_format: images
+
+sensor_right_gray:
+ blueprint: sensor.camera.depth
+ caption: Camera Depth (Logarithmic Gray Scale)
+ Setting:
+   image_size_x: 1382
+   image_size_y: 512
+   fov: 90
+ Spawning:
+   Location:
+     y: 1.0
+     z: 1.65
+   Rotation:
+     pitch: -15
+   attachment_type: Rigid
+   attach_to: hero
+ Listening:
+   colorConverter: LogarithmicDepth
+ data_format: images
+
+sensor_right_semseg:
+ blueprint: sensor.camera.semantic_segmentation
+ caption: Camera Semantic Segmentation (CityScapesPalette)
+ Setting:
+   image_size_x: 1382
+   image_size_y: 512
+   fov: 90
+ Spawning:
+   Location:
+     y: 1.0
+     z: 1.65
+   Rotation:
+     pitch: -15
+   attachment_type: Rigid
+   attach_to: hero
+ Listening:
+   colorConverter: CityScapesPalette
+ data_format: images
+
+
+data_dir : "episodes/"

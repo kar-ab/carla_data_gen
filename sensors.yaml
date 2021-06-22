@@ -1,0 +1,170 @@
+# Paths follow the pattern 
+
+sensor_1: 
+  blueprint: sensor.camera.rgb
+  caption: Camera RGB
+  Setting:
+    image_size_x: 2048
+    image_size_y: 2048
+    fov: 90
+    sensor_tick: 0
+  Spawning:
+    Location:
+      x: -5.5
+      z: 2.5
+    Rotation:
+      pitch: -15
+    attachment_type: SpringArm
+    attach_to: hero
+  Listening:
+    colorConverter: Raw
+  data_format: numpy/images
+  
+  
+sensor_2:
+ blueprint: sensor.camera.depth
+ caption: Camera Depth (Raw)
+ Setting:
+   image_size_x: 2048
+   image_size_y: 2048
+#    fov: 90
+ Spawning:
+   Location:
+     x: 1.6
+     z: 1.7
+   attachment_type: Rigid
+   attach_to: hero
+ Listening:
+   colorConverter: Raw
+ data_format: numpy/images
+
+sensor_3:
+ blueprint: sensor.camera.depth
+ caption: Camera Depth (Grayscale)
+ Setting:
+   image_size_x: 2048
+   image_size_y: 2048
+   fov: 90
+ Spawning:
+   Location:
+     x: 1.6
+     z: 1.7
+   attachment_type: Rigid
+   attach_to: hero
+ Listening:
+   colorConverter: Depth
+ data_format: numpy/images
+
+sensor_4:
+ blueprint: sensor.camera.depth
+ caption: Camera Depth (Logarithmic Gray Scale)
+ Setting:
+   image_size_x: 2048
+   image_size_y: 2048
+   fov: 90
+ Spawning:
+   Location:
+     x: 1.6
+     z: 1.7
+   attachment_type: Rigid
+   attach_to: hero
+ Listening:
+   colorConverter: LogarithmicDepth
+ data_format: numpy/images
+
+sensor_5:
+ blueprint: sensor.camera.semantic_segmentation
+ caption: Camera Semantic Segmentation (Raw)
+ Setting:
+   image_size_x: 2048
+   image_size_y: 2048
+   fov: 90
+ Spawning:
+   Location:
+     x: 5.5
+     y: 1.5
+     z: 1.5
+   attachment_type: SpringArm
+   attach_to: hero
+ Listening:
+   colorConverter: Raw
+ data_format: numpy/images
+
+sensor_6:
+ blueprint: sensor.camera.semantic_segmentation
+ caption: Camera Semantic Segmentation (CityScapesPalette)
+ Setting:
+   image_size_x: 2048
+   image_size_y: 2048
+   fov: 90
+ Spawning:
+   Location:
+     x: 5.5
+     y: 1.5
+     z: 1.5
+   attachment_type: SpringArm
+   attach_to: hero
+ Listening:
+   colorConverter: CityScapesPalette
+ data_format: numpy/images
+
+sensor_7:
+ blueprint: sensor.camera.rgb
+ caption: Camera RGB Distorted
+ Setting:
+   image_size_x: 2048
+   image_size_y: 2048
+   fov: 90
+   lens_circle_multiplier: 3.0
+   lens_circle_falloff: 3.0
+   chromatic_aberration_intensity: 0.5
+   chromatic_aberration_offset: 0
+ Spawning:
+   Location:
+     x: -1
+#      y:-0.5 + self._parent.bounding_box.extent.y
+     y: -0.5
+     z: 0.5
+   attachment_type: Rigid
+   attach_to: hero
+ Listening:
+   colorConverter: Raw
+ data_format: numpy/images
+
+sensor_8:
+ blueprint: sensor.lidar.ray_cast
+ caption: Lidar (Ray-Cast)
+ Setting:
+   range: 50
+ Spawning:
+   Location:
+     x: -8.0
+     z: 6.0
+   Rotation:
+     pitch: 6.0
+   attachment_type: SpringArm
+   attach_to: hero
+ data_format: ply
+
+sensor_9:
+ blueprint: sensor.other.radar
+ caption: Radar
+ Setting:
+   horizontal_fov: 35
+   vertical_fov: 20
+ Spawning:
+   Location:
+     x: 2.8
+     z: 1.0
+   Rotation:
+     pitch: 5.0
+   attach_to: hero
+ data_format: numpy
+
+data_dir : "episodes/"
+
+# mini_view:
+#  - sensor_1
+#  - sensor_2
+#  - sensor_3
+#  - sensor_4
