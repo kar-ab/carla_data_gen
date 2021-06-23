@@ -26,16 +26,18 @@ Following are the highlights of this project:
 
 1. Install [Carla Simulator](https://carla.org/2020/04/22/release-0.9.9/) .This work has been implemented on Carla v0.9.9 .
 2. `git clone https://github.com/kar-ab/carla_data_gen`
-3. Run script record_sync_data.py
+3. Run script record_sync_data.py with the respective yaml file
 
     `$ python3 record_data_sync.py --yaml=sensors.yaml`
+    
     OR     
+    
     `$ python3 record_data_sync.py --yaml=stereo_vision.yaml`
 
 
 ## TODO list
 
-1. After running scripts, it will take around 10-15 seconds for data to generate and the ego vehicle to move. possible solution - Maybe initial frames are being used to plan the vehicle path, need to start only sync only when vehicle has moved form its original location. 
+1. IT takes 10-15 seconds for ego vehicle to move. possible solution - Maybe initial frames are being used to plan the vehicle path, need to start only sync only when vehicle has moved form its original location. 
 2. Extract 2D and 3D bounding boxes for respective cameras
 3. Integrating openscenario to add scenarios
 4. Convert sensor data in KITTI / Cityscapes dataset format
