@@ -12,9 +12,12 @@ Following are the highlights of this project:
     
     a. [stereo_vision.yaml](../blob/main/stereo_vision.yaml) 
         
-        Two cameras, i.e. left and right are attached to vehicle. At the same position semantic segmentation and depth cameras are also attached to generate groudn truth data for training. A sample of sensor data can be viewed in [folder](..blob/main/episodes/2021-05-14_00-06-47)
+    Two cameras, i.e. left and right are attached to vehicle. At the same position semantic segmentation and depth cameras are also attached to generate ground truth data for training. A sample of sensor data can be viewed [here](..blob/main/episodes/2021-05-14_00-06-47)
         
     b. [sensors.yaml](../blob/main/sensors.yaml)
+    
+    All types of sensor which can be attached to a vehicle. A sample of sensor data can be viewed [here](..blob/main/episodes/2021-05-14_00-08-23)
+    
 3. Gather and save data synchronously from sensors and then the ego vehicle proceeds to next waypoint
 4. By default, Ego vehicle movements are generated using the [BehaviorAgent](../blob/main/configure_agents/navigation/behavior_agent.py).
 5. The same repository can be modified to work in online mode also, by just tweaking the Motion planning and Vehicle Control logic as per the incoming sensor data. 
@@ -24,6 +27,7 @@ Following are the highlights of this project:
 1. Install [Carla Simulator](https://carla.org/2020/04/22/release-0.9.9/) .This work has been implemented on Carla v0.9.9 .
 2. `git clone https://github.com/kar-ab/carla_data_gen`
 3. Run script record_sync_data.py
+
     `$ python3 record_data_sync.py --yaml=sensors.yaml`
     OR     
     `$ python3 record_data_sync.py --yaml=stereo_vision.yaml`
