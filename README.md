@@ -4,7 +4,7 @@
 ## Project description
 
 This project is intended to generate training data for Autonomous Driving reserach using open source simulator i.e. Carla Simulator. 
-In this project, an ego vehicle (vehicle.audi.tt) and other actors (vehicles / wlaking persons) are added to the simualtion. Sensors are attached to the ego vehicle and as the ego vehicle travels around in the environment, data from sensors are synchronously saved in respective folders. 
+In this project, an ego vehicle (vehicle.audi.tt) and other actors (vehicles / walking persons) are added to the simualtion. Sensors are attached to the ego vehicle and as the ego vehicle travels around in the environment, data from sensors are synchronously saved in respective folders. 
     
 Following are the highlights of this project: 
     
