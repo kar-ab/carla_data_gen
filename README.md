@@ -29,9 +29,6 @@ Following are the highlights of this project:
 3. Run script record_sync_data.py with the respective yaml file
 
     `$ python3 record_data_sync.py --yaml=sensors.yaml`
-    
-    OR     
-    
     `$ python3 record_data_sync.py --yaml=stereo_vision.yaml`
 
 
