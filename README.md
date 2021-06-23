@@ -16,7 +16,7 @@ Following are the highlights of this project:
         
     b. [sensors.yaml](../blob/main/sensors.yaml)
     
-    All types of sensor which can be attached to a vehicle. A sample of sensor data can be viewed [here](..blob/main/episodes/2021-05-14_00-08-23)
+    All types of sensor which can be attached to a vehicle in a Carla Simulator. A sample of sensor data can be viewed [here](..blob/main/episodes/2021-05-14_00-08-23)
     
 3. Gather and save data synchronously from sensors and then the ego vehicle proceeds to next waypoint
 4. By default, Ego vehicle movements are generated using the [BehaviorAgent](../blob/main/configure_agents/navigation/behavior_agent.py).
