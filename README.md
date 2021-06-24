@@ -28,8 +28,7 @@ Following are the highlights of this project:
 2. `git clone https://github.com/kar-ab/carla_data_gen`
 3. Run script record_sync_data.py with the respective yaml file
 
-    `$ python3 record_data_sync.py --yaml=sensors.yaml`
-    `$ python3 record_data_sync.py --yaml=stereo_vision.yaml`
+    `$ python3 record_data_sync.py --yaml=sensors.yaml`  OR `$ python3 record_data_sync.py --yaml=stereo_vision.yaml`
 
 
 ## TODO list
