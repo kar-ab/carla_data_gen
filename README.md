@@ -34,7 +34,7 @@ Following are the highlights of this project:
 
 ## TODO list
 
-1. IT takes 10-15 seconds for ego vehicle to move. possible solution - Maybe initial frames are being used to plan the vehicle path, need to start only sync only when vehicle has moved form its original location. 
+1. Initial 10-15 seconds are taken for ego vehicle to generate vehicle control actions. possible solution - Maybe initial frames are being used to plan the vehicle path, need to start only sync only when vehicle has moved form its original location. 
 2. Extract 2D and 3D bounding boxes for respective cameras
 3. Integrating openscenario to add scenarios
 4. Convert sensor data in KITTI / Cityscapes dataset format
