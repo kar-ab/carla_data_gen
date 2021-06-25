@@ -8,7 +8,9 @@ In this project, an ego vehicle (vehicle.audi.tt) and other actors (vehicles / w
     
 Following are the highlights of this project: 
     
-1. Attach sensors easily using a yaml file: Sample yaml files are provided for reference: 
+1. Attach sensors easily using a yaml file: 
+    Sensor Attributes for different sensor can be found [here](https://carla.readthedocs.io/en/0.9.9/ref_sensors/)
+    Sample yaml files are provided for reference: 
     
     a. [stereo_vision.yaml](../blob/main/stereo_vision.yaml) 
         
