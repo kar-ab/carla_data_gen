@@ -41,7 +41,7 @@ Following are the highlights of this project:
 3. Integrating openscenario to add scenarios
 4. Convert sensor data in KITTI / Cityscapes dataset format
 5. Add measurements section for each frame: 
-    location, accelerometer, compass, theta, speed, target_speed, x_command, y_command, steer, throtthle , brake, gyroscope, GNSS, town
+    location, accelerometer, compass, collision, theta, speed, target_speed, x_command, y_command, steer, throtthle , brake, gyroscope, GNSS, town
 6. Provide a summary of data collected
 7. For any RGB camera added: by default save 2D/3D boudning boxes, sem_seg info and depth camera details
 8. Similarly: For any lidar added, save its semantic information
