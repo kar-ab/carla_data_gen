@@ -39,8 +39,8 @@ Following are the highlights of this project:
 2. Extract 2D and 3D bounding boxes for respective cameras
 3. Integrating openscenario to add scenarios
 4. Convert sensor data in KITTI / Cityscapes dataset format
-
-
+5. Add measurements section for each save: 
+    x,y, GPS, theta, speed, target_speed, x_command, y_command, steer, throtthle , brake
 ## Credits: 
 
 [Carla Simulator Team](https://carla.org/)
