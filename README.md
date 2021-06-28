@@ -43,6 +43,8 @@ Following are the highlights of this project:
 5. Add measurements section for each frame: 
     x,y, GPS, theta, speed, target_speed, x_command, y_command, steer, throtthle , brake
 6. Provide a summary of data collected
+7. For any RGB camera added: by default save 2D/3D boudning boxes, sem_seg info and depth camera details
+8. Similarly: For any lidar added, save its semantic information
 ## Credits: 
 
 [Carla Simulator Team](https://carla.org/)
