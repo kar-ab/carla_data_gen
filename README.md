@@ -35,6 +35,7 @@ Following are the highlights of this project:
 
 ## TODO list
 
+0. Test for Semantic lidar data
 1. Initial 10-15 seconds are taken for ego vehicle to generate vehicle control actions. possible solution - Maybe initial frames are being used to plan the vehicle path, need to start only sync only when vehicle has moved form its original location. 
 2. Extract 2D and 3D bounding boxes for respective cameras
 3. Integrating openscenario to add scenarios
