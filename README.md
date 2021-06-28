@@ -41,6 +41,7 @@ Following are the highlights of this project:
 4. Convert sensor data in KITTI / Cityscapes dataset format
 5. Add measurements section for each frame: 
     x,y, GPS, theta, speed, target_speed, x_command, y_command, steer, throtthle , brake
+6. Provide a summary of data colected
 ## Credits: 
 
 [Carla Simulator Team](https://carla.org/)
