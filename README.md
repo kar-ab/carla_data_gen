@@ -46,7 +46,7 @@ Following are the highlights of this project:
 7. For any RGB camera added: by default save 2D/3D boudning boxes, sem_seg info and depth camera details
 8. Similarly: For any lidar added, save its semantic information
 9. Create 3d bounding boxes in lidar point cloud data automatically using transformations
-10. Create instance map using using semantic lidar object_idx
+10. Create instance map using using semantic lidar object_idx (Attach lidar and acamera at same position, check if rotation is needed, the generate projection matrix, and get it 2d plane)
 ## Credits: 
 
 [Carla Simulator Team](https://carla.org/)
