@@ -37,7 +37,7 @@ Following are the highlights of this project:
 
 0. Test for Semantic lidar data
 1. Initial 10-15 seconds are taken for ego vehicle to generate vehicle control actions. possible solution - Maybe initial frames are being used to plan the vehicle path, need to start only sync only when vehicle has moved form its original location. 
-2. Extract 2D and 3D bounding boxes for respective cameras
+2. Extract 2D and 3D bounding boxes for respective cameras: converting 3d to 2d
 3. Integrating openscenario to add scenarios
 4. Convert sensor data in KITTI / Cityscapes dataset format
 5. Add measurements section for each frame: 
@@ -45,7 +45,8 @@ Following are the highlights of this project:
 6. Provide a summary of data collected
 7. For any RGB camera added: by default save 2D/3D boudning boxes, sem_seg info and depth camera details
 8. Similarly: For any lidar added, save its semantic information
-9. Create bounding boxes in lidar point cloud data automatically using transformations
+9. Create 3d bounding boxes in lidar point cloud data automatically using transformations
+10. Create instance map using using semantic lidar object_idx
 ## Credits: 
 
 [Carla Simulator Team](https://carla.org/)
