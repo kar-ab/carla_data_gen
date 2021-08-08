@@ -37,6 +37,8 @@ a good way to attach self vecotiy to ego vehicle and other vehicles
 also lidar data to camera projetion is shown here 
 https://github.com/joedlopes/joed
 
+how to set velocities to other vehicles to generate a good way to create a scenarios only using basic velocity assigning to opponents vehicle
+
 ## TODO list
 
 0. Test for Semantic lidar data
