@@ -54,6 +54,10 @@ how to set velocities to other vehicles to generate a good way to create a scena
 9. Create 3d bounding boxes in lidar point cloud data automatically using transformations
 10. Create instance map using using semantic lidar object_idx (Attach lidar and acamera at same position, check if rotation is needed, the generate projection matrix, and get it 2d plane) ref: https://github.com/carla-simulator/carla/issues/3191#
 11. Lidar 3D to camera 2d projection https://github.com/carla-simulator/carla/blob/master/PythonAPI/examples/lidar_to_camera.py
+12. using assert statement to make sure we have synchronised data from sensors:  
+           https://github.com/carla-simulator/carla/blob/d23f3dc1340e47265eeea2b1b33b2d3a2d6d4f42/PythonAPI/examples/lidar_to_camera.py#L146
+           assert image_data.frame == lidar_data.frame == world_frame
+           # At this point, we have the synchronized information from the 2 sensors.
 ## Credits: 
 
 [Carla Simulator Team](https://carla.org/)
