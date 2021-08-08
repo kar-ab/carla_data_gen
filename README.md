@@ -32,6 +32,10 @@ Following are the highlights of this project:
 
     `$ python3 record_data_sync.py --yaml=sensors.yaml`  OR `$ python3 record_data_sync.py --yaml=stereo_vision.yaml`
 
+Ref: repos
+a good way to attach self vecotiy to ego vehicle and other vehicles
+also lidar data to camera projetion is shown here 
+https://github.com/joedlopes/joed
 
 ## TODO list
 
@@ -46,7 +50,7 @@ Following are the highlights of this project:
 7. For any RGB camera added: by default save 2D/3D boudning boxes, sem_seg info and depth camera details
 8. Similarly: For any lidar added, save its semantic information
 9. Create 3d bounding boxes in lidar point cloud data automatically using transformations
-10. Create instance map using using semantic lidar object_idx (Attach lidar and acamera at same position, check if rotation is needed, the generate projection matrix, and get it 2d plane)
+10. Create instance map using using semantic lidar object_idx (Attach lidar and acamera at same position, check if rotation is needed, the generate projection matrix, and get it 2d plane) ref: https://github.com/carla-simulator/carla/issues/3191#
 ## Credits: 
 
 [Carla Simulator Team](https://carla.org/)
